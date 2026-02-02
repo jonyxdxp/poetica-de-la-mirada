@@ -5,7 +5,10 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/poetica-de-la-mirada/',
+  build: {
+    outDir: 'dist',
+  },
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
