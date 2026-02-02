@@ -1,8 +1,6 @@
 import { useRef, useLayoutEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,10 +10,9 @@ interface ModuleSectionProps {
   description: string;
   image: string;
   zIndex: number;
-  moduleId?: number;
 }
 
-const ModuleSection = ({ badge, title, description, image, zIndex, moduleId = 1 }: ModuleSectionProps) => {
+const ModuleSection = ({ badge, title, description, image, zIndex }: ModuleSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
   const badgeRef = useRef<HTMLSpanElement>(null);

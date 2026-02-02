@@ -24,7 +24,7 @@ const Navigation = () => {
     }
   };
 
-  const scrollToModule = (moduleId: number) => {
+  const scrollToModule = () => {
     // Scroll to the modules section first
     const moduloSection = document.getElementById('modulos');
     if (moduloSection) {
@@ -91,7 +91,7 @@ const Navigation = () => {
                 {modulesData.map((module) => (
                   <button
                     key={module.id}
-                    onClick={() => scrollToModule(module.id)}
+                    onClick={() => scrollToModule()}
                     className="w-full px-4 py-2 text-left text-xs text-[#B8B4AA] hover:text-[#C7A36D] hover:bg-[rgba(199,163,109,0.1)] transition-colors duration-200"
                   >
                     {module.title}
