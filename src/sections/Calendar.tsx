@@ -116,7 +116,7 @@ const Calendar = () => {
   const stats = [
     { icon: Clock, value: '16', label: 'Semanas' },
     { icon: CalendarDays, value: '8', label: 'Encuentros' },
-    { icon: Users, value: '12', label: 'Cupos' },
+    { icon: Users, value: 'x', label: 'Cupos' },
     { icon: Sparkles, value: '8', label: 'Módulos' },
   ];
 
@@ -235,7 +235,7 @@ const Calendar = () => {
           </button>
           <div className="flex flex-col gap-1">
             <span className="text-sm text-[#B8B4AA]">
-              Cupos limitados a 12 participantes.
+              Cupos limitados a x participantes.
             </span>
             <span className="text-xs text-[#B8B4AA]/70">
               Se abona al inscribirse • Inicio: 6 de Octubre 2026
