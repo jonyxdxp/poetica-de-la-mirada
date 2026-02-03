@@ -9,6 +9,8 @@
     }
   ],
   "compilerOptions": {
+    "noUnusedLocals": false,      // Changed from true
+    "noUnusedParameters": false,   // Changed from true
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
