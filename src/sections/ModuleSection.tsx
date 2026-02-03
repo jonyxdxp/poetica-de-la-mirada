@@ -10,6 +10,7 @@ interface ModuleSectionProps {
   description: string;
   image: string;
   zIndex: number;
+  moduleId?: number;  // ← Add this line
 }
 
 const ModuleSection = ({ badge, title, description, image, zIndex }: ModuleSectionProps) => {
